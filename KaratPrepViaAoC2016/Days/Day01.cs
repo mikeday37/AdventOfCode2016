@@ -21,7 +21,7 @@ namespace KaratPrepViaAoC2016.Days
 			public int Distance {get;set;}
 		}
 
-		IEnumerable<Instruction> ParseInstructions(string input)
+		static IEnumerable<Instruction> ParseInstructions(string input)
 		{
 			foreach (var raw in input.Trim().Split(", "))
 				yield return new Instruction{
@@ -29,25 +29,8 @@ namespace KaratPrepViaAoC2016.Days
 					Distance = int.Parse(raw.Substring(1))
 				};
 		}
-
-		struct Location
-		{
-			public int X, Y;
-			public override int GetHashCode()
-			{
-				return HashCode.Combine(X, Y);
-			}
-			public override bool Equals(object obj)
-			{
-				return obj is Location && Equals((Location) obj);
-			}
-			public bool Equals(Location l)
-			{
-				return X == l.X && Y == l.Y;
-			}
-		}
 		
-		IEnumerable<Location> FollowInstructions(string input)
+		static IEnumerable<Point> FollowInstructions(string input)
 		{
 			int x = 0, y = 0, dx = 0, dy = -1;
 
@@ -70,7 +53,7 @@ namespace KaratPrepViaAoC2016.Days
 				{
 					x += dx;
 					y += dy;
-					yield return new Location{X = x, Y = y};
+					yield return new Point(x, y);
 				}
 			}
 		}
@@ -83,12 +66,14 @@ namespace KaratPrepViaAoC2016.Days
 
 		public override object Part2(string input)
 		{
-			HashSet<Location> locations = new HashSet<Location>();
+			HashSet<Point> locations = new HashSet<Point>();
+
 			foreach (var loc in FollowInstructions(input))
 				if (locations.Contains(loc))
 					return loc.X + loc.Y;
 				else
 					locations.Add(loc);
+
 			return "no location is visited twice";
 		}
 	}
