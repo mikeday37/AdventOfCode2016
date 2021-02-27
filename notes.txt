@@ -1,0 +1,8 @@
+initial setup:
+
+1. created repo via github, cloned local
+2. setup submodule to use same scaffolding as my AoC2020 repo, via:
+	git submodule add -b phase2 https://github.com/mikeday37/AdventOfCodeScaffolding.git
+	
+
+	

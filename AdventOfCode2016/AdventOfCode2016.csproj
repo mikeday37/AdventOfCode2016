@@ -4,10 +4,15 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+	<!--  <LangVersion>6</LangVersion> -->
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AdventOfCodeScaffolding\AdventOfCodeScaffolding.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Input\" />
   </ItemGroup>
 
 </Project>
