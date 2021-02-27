@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AdventOfCodeScaffolding;
 
-namespace AdventOfCode2016.Days
+namespace KaratPrepViaAoC2016.Days
 {
 	[Challenge(0, "__template__")]
 	class Day00 : ChallengeBase

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using AdventOfCodeScaffolding;
 
-namespace AdventOfCode2016
+namespace KaratPrepViaAoC2016
 {
 	class Program
 	{
