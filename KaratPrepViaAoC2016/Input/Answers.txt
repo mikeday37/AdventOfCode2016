@@ -1,3 +1,17 @@
-﻿Day 01
+﻿---
+Day 01
 	Part 1: 288
 	Part 2: 111
+---
+Day 02
+	Part 1: 95549
+	Part 2: D87AD
+---
+Day 03
+	Part 1: 869
+	Part 2: 1544
+---
+Day 04
+	Part 1: 173787
+	Part 2: 548
+---
