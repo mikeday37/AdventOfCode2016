@@ -1,0 +1,4 @@
+[submodule "AdventOfCodeScaffolding"]
+	path = AdventOfCodeScaffolding
+	url = https://github.com/mikeday37/AdventOfCodeScaffolding.git
+	branch = phase2
