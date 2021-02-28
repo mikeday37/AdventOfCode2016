@@ -15,3 +15,7 @@ Day 04
 	Part 1: 173787
 	Part 2: 548
 ---
+Day 05
+	Part 1: f77a0e6e
+	Part 2: 999828ec
+---
